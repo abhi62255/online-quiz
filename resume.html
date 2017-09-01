@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>resume</title>
+</head>
+<body>
+	<pre>
+	<form action="profile_process.php" method="POST">
+	<table border="0" cellpadding="5">
+		<h2>Job Profile Registration Form</h2>
+		<tr><th>Name</th><td><input type="text" name="name" required></td></tr>
+		<tr><th>Age</th><td><input type="text" name="age" required></td></tr>
+		<tr><th>Gender</th><td><input type="radio" name="gender">Male	<input type="radio" name="gender">Female</td></tr>    
+		<tr><th>Email</th><td><input type="text" name="email" required></td></tr>
+		<tr><th>Contact</th><td><input type="text" name="contact" required></td></tr>
+		<tr><th>Area of Interest</th><td><input type="checkbox" name="interest">Telecome	<input type="checkbox" name="interest">IT	<input type="checkbox" name="interest">Networking</td></tr>
+		<tr><th>Qualification</th><td><select name="qualification">
+			<option value="B tech">Btech</option>
+			<option value="Mtech">Mtech</option>
+			<option value="BE">BE</option>
+			<option value="BSC">BSC</option>
+			<option value="BCA">BCA</option>
+		</select></td></tr>
+		<tr><th>Resume</th><td><input type="file" name="resume" required></td></tr>
+		<tr><td colspan="2" align="right"><input type="submit" name="submit" value="submit"></td></tr>
+		
+	</form>
+	</pre>
+
+</body>
+</html>
