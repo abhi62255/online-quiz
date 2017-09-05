@@ -1,13 +1,16 @@
 <?php
 	if(isset($_POST["submit"]))
 	{
-		if($_FILES["resume"]["type"]=="text/plain")
-		{
-			$name=$_POST["name"];
-			$age=$_POST["age"];
-			$email=$_POST["email"];
-			$contact=$_POST["contact"];
-			$registration_number=rand(1000000,100000000);
+		if($_FILES["resume"]["size"]<2000)
+		{		
+			if($_FILES["resume"]["type"]=="text/plain")
+			{
+				$name=$_POST["name"];
+				$age=$_POST["age"];
+				$email=$_POST["email"];
+				$contact=$_POST["contact"];
+				$registration_number=rand(1000000,100000000);
+			}
 		}
 	}
 
